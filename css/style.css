@@ -1,0 +1,56 @@
+/* NOTE BOXES FOR DOCS
+/* Distributed under GPU License
+
+
+/* Plot out the header and background */
+div.note:before, div.caution:before {
+    display:inline-block;
+    background: #fff no-repeat;
+    font-weight: bold;
+    position: absolute;
+   /* Depending on how your existing theme looks
+      you may need to play with the margins and           padding a bit */
+    top: -15px;
+    margin-left: 20px;
+    padding:5px 5px;
+    padding-left:30px; 
+
+}
+/* Plot out the real estate for body */
+div.note, div.caution {
+    border-radius: 10px;
+    padding: 20px 20px 10px;
+    margin: 25px auto 30px;
+    position:relative;
+    display:inline-block;
+    width:auto;
+    max-width: 1000px;
+
+}
+
+/* Make a Note Box With a background image for an icon and text */
+div.note:before {
+    background-image: url(//p5.zdassets.com/hc/theme_assets/4826/200045987/note.png);
+    background-size:27%;
+    color:#black;
+    content:'Note';
+    background-position:  5px;
+}
+/* Pop it with a border with a neat colour */
+div.note {
+    border: 1px solid #286090;
+}
+
+/* Make a Caution Box With a background image for an icon and text */
+div.caution:before {
+   background-image: url(//p5.zdassets.com/hc/theme_assets/4826/200045987/caution.png);
+    background-size:20%;
+    color:#black;
+    content:'Caution';
+    background-position: 5px;
+}
+
+/* Pop it with a border, with a neat colour*/
+div.caution {
+    border: 1px solid #a74301;
+}
